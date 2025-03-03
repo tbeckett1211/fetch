@@ -51,7 +51,6 @@ const login = async () => {
 			:state="formState"
 			@submit="login"
 			@error="onFormError"
-			class="space-y-4"
 		>
 			<UFormField name="name">
 				<UInput
@@ -63,6 +62,7 @@ const login = async () => {
 			</UFormField>
 			<UFormField name="email">
 				<UInput
+					class="my-4"
 					autocomplete="email"
 					icon="i-material-symbols-person-2-outline-rounded"
 					v-model="formState.email"
